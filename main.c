@@ -1,14 +1,25 @@
 #include <stdio.h>
 
-void func1(x){
-    int x;
-    printf("func1n x is at %p\n", &x);
+void sumTwo(int a, int b)
+{
+    int sum;
+
+    sum = a + b;
+    printf("두 정수의 합은 %d 입니다.\n", sum);
 }
 
-int main(void){
-    int x;
-    printf("main x is at %p\n", &x);
-    func1();
-    
+int main(void)
+{
+    int num1, num2;
+
+    printf("첫 번째 정수를 입력하세요: ");
+    scanf("%d", &num1);
+
+
+    printf("두 번째 정수를 입력하세요: ");
+    scanf("%d", &num2);
+
+    sumTwo(num1, num2);
+
     return 0;
 }
