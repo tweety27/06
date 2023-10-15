@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void square(int a)
+int square(int a)
 {
-    a = a * a;
+    return (a * a);
 }
 
 int main(){
