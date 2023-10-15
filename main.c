@@ -1,22 +1,29 @@
 #include <stdio.h>
 
-void square(int n)
+void get_max(int x, int y)
 {
-    int sq;
+    int max;
 
-    sq = n * n;
+    if (x > y){
+        max = x;
+    } else {
+        max = y;
+    }
 
-    printf("정수의 제곱은 %d 입니다.\n", sq);
+    printf("두 개의 정수 중 큰 정수는 %d 입니다.\n", max);
 }
 
 int main(void)
 {
-    int num;
+    int num1, num2;
 
-    printf("정수를 입력하세요: ");
-    scanf("%d", &num);
+    printf("첫 번째 정수를 입력하세요: ");
+    scanf("%d", &num1);
 
-    square(num);
+    printf("두 번째 정수를 입력하세요: ");
+    scanf("%d", &num2);
+
+    get_max(num1, num2);
 
     return 0;
 }
