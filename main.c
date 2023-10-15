@@ -1,25 +1,22 @@
 #include <stdio.h>
 
-void sumTwo(int a, int b)
+void square(int n)
 {
-    int sum;
+    int sq;
 
-    sum = a + b;
-    printf("두 정수의 합은 %d 입니다.\n", sum);
+    sq = n * n;
+
+    printf("정수의 제곱은 %d 입니다.\n", sq);
 }
 
 int main(void)
 {
-    int num1, num2;
+    int num;
 
-    printf("첫 번째 정수를 입력하세요: ");
-    scanf("%d", &num1);
+    printf("정수를 입력하세요: ");
+    scanf("%d", &num);
 
-
-    printf("두 번째 정수를 입력하세요: ");
-    scanf("%d", &num2);
-
-    sumTwo(num1, num2);
+    square(num);
 
     return 0;
 }
